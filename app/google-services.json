@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "867606730035",
+    "firebase_url": "https://drumm-688d9.firebaseio.com",
+    "project_id": "drumm-688d9",
+    "storage_bucket": "drumm-688d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867606730035:android:c868bf27af8b1388",
+        "android_client_info": {
+          "package_name": "drumm.sangsu.drumm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867606730035-5s53cjmul63r21a2sh2pc71q8daa64ur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvMoPWmRo5F85ND0tVPtQL00x4U-AKs4M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
