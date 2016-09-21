@@ -67,7 +67,7 @@ public class DrumWidget extends AppWidgetProvider {
         super.onEnabled(context);
         FirebaseMessaging.getInstance().subscribeToTopic("news");
         String token =  FirebaseInstanceId.getInstance().getToken();
-        Log.e("token", token);
+       // Log.e("token", token);
         NetworkManager.getInstance().send_token(MyApplication.getContext(), token, new NetworkManager.OnResultListener<SendTokenResult>() {
             @Override
             public void onSuccess(Request request, SendTokenResult result) { // 성공시

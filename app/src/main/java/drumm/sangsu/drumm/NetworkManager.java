@@ -118,10 +118,12 @@ public class NetworkManager {
                                String token,
                                OnResultListener<SendTokenResult> listener) {
 
-        RequestBody body = new FormBody.Builder()
-                .add("token", token)
-                .build();
 
+        JsonData data = new JsonData();
+        data.token = token;
+
+        String json = gson.toJson(data);
+        RequestBody body = RequestBody.create(MediaType.parse("application/json"), json);
         Request request = new Request.Builder()
                 .url(URL_SEND_TOKEN)
                 .post(body)

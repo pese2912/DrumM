@@ -27,11 +27,23 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         Log.d(TAG, "Refreshed token: " + token);
 
         // TODO: Implement this method to send any registration to your app's servers.
-        sendRegistrationToServer(token);
+      //  sendRegistrationToServer(token);
+        NetworkManager.getInstance().send_token(MyApplication.getContext(), token, new NetworkManager.OnResultListener<SendTokenResult>() {
+            @Override
+            public void onSuccess(Request request, SendTokenResult result) {
+
+            }
+
+            @Override
+            public void onFail(Request request, IOException exception) {
+
+            }
+        });
     }
 
     private void sendRegistrationToServer(String token) {
         // Add custom implementation, as needed.
+/*
 
         OkHttpClient client = new OkHttpClient();
         RequestBody body = new FormBody.Builder()
@@ -49,6 +61,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
         } catch (IOException e) {
             e.printStackTrace();
         }
+*/
 
     }
 }
