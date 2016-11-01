@@ -3,7 +3,7 @@
 
 
 <h2> Using technology</h2>
-<h3> Google FireBase for FCM </h3>
-<h3> Http Connection using OKHTTP Library</h3>
-<h3> Pushing Alarm Message </h3>
+<h4> Google FireBase for FCM </h4>
+<h4> Http Connection using OKHTTP Library</h4>
+<h4> Pushing Alarm Message </h4>
 
